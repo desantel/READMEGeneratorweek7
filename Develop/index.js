@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-// let generateMarkdown = require('./utils/generateMarkdown')
+let generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const writeFileAsync = util.promisify(fs.writeFile);
 const promptQuestions = () => {
@@ -81,7 +81,7 @@ const promptQuestions = () => {
             name: "username",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         }
-    ]);
+    ])
 };
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -96,7 +96,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     promptQuestions()
-        .then(() => writeFileAsync)
+        .then(function (data) {
+            console.log("Creating Markdown");
+            writeToFile("README.md", generateMarkdown({ ...data }));
+        });
 }
 
 // Function call to initialize app

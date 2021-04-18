@@ -10,31 +10,37 @@ const promptQuestions = () => {
         {
             type: "input",
             message: "What is the name of your project?",
-            name: "Title",
+            name: "title",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } },
         },
         {
             type: "input",
             message: "What is the table of contents?",
-            name: "Table of Contents",
+            name: "contents",
+            validate: (value) => { if (value) { return true } else { return "Please enter value" } }
+        },
+        {
+            type: "input",
+            message: "Please desribe application?",
+            name: "description",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
         {
             type: "input",
             message: "How do you install the application?",
-            name: "Installation",
+            name: "installation",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
         {
             type: "input",
             message: "How do you use the application?",
-            name: "Usage",
+            name: "usage",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
         {
             type: "checkbox",
             message: "What is the license type?",
-            name: "License",
+            name: "license",
             choices: [
                 "None",
                 "Apache2.0",
@@ -54,19 +60,25 @@ const promptQuestions = () => {
         {
             type: "input",
             message: "Who all helped contribute?",
-            name: "Contributing",
+            name: "contribute",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
         {
             type: "input",
             message: "How do you test the application?",
-            name: "Tests",
+            name: "test",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
         {
             type: "input",
-            message: "How are you reached for further questions?",
-            name: "Questions",
+            message: "Please enter email address",
+            name: "email",
+            validate: (value) => { if (value) { return true } else { return "Please enter value" } }
+        },
+        {
+            type: "input",
+            message: "Please enter github username, @ is not needed",
+            name: "username",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         }
     ]);

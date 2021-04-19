@@ -1,4 +1,4 @@
-# l
+# Generate README
 
 ----
 
@@ -14,21 +14,21 @@
   -[Contact Me](#Contact-Information)
   
   ### Description
-  l
+  Generates README
   
   ### Installation
-  l
+  a
   
   ### Usage
-  l
+  a
   
   ### Contribution
-  l
+  None
   
   ### How to Test
-  l
+  npm run test
   
   ### Contact-Information
-  [Github Profile](https://github.com/l)
-  l
+  [Github Profile](https://github.com/desantel)
+  elizabeth.desantis90@gmail.com
   

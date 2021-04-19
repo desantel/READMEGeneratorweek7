@@ -84,20 +84,20 @@ const promptQuestions = () => {
     ])
 };
 // TODO: Create a function to write README file
-// function writeToFile(data) {
-//     fs.writeRead(data, err => {
-//         if (err) {
-//             return console.log("error")
-//         }
-//         console.log("It worked!")
-//     });
-// }
+function writeToFile(data) {
+    fs.writeRead(data, err => {
+        if (err) {
+            return console.log("error")
+        }
+        console.log("It worked!")
+    });
+}
 
 // TODO: Create a function to initialize app
 const init = () => {
     promptQuestions()
         .then((data) => writeFileAsync('README.md', generateMarkdown(data)))
-        // .then((data) => writeToFile("README.md", generateMarkdown(data)))
+        .then((data) => writeToFile("README.md", generateMarkdown(data)))
         .then(() => console.log('Creating README'))
         .catch((err) => console.error(err));
         //     console.log("Creating Markdown");

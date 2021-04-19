@@ -16,8 +16,6 @@ function generateMarkdown(data) {
 
 ----
 
-<a href="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"></a>
-
 
 ## Table of Contents 
   -[Description](#Descriptiod)
@@ -35,6 +33,9 @@ function generateMarkdown(data) {
   
   ### Usage
   ${data.usage}
+
+  ### License
+  <a href="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"></a>
   
   ### Contribution
   ${data.contribute}

@@ -15,12 +15,6 @@ const promptQuestions = () => {
         },
         {
             type: "input",
-            message: "What is the table of contents?",
-            name: "contents",
-            validate: (value) => { if (value) { return true } else { return "Please enter value" } }
-        },
-        {
-            type: "input",
             message: "Please desribe application?",
             name: "description",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }

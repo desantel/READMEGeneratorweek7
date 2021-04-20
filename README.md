@@ -25,6 +25,9 @@ Must have Node.js! Once this is installed, pull up desantel github and fork week
   
 ## Usage
 Once npm i is done initallizing, make sure terminal is in Develop folder and type in node index.js.  Answer the questions as prompted.
+![photo1](./Assets/screenshot1.png)
+![photo2](./Assets/screenshot2.png)
+![photo3](./Assets/screenshot3.png)
 https://drive.google.com/file/d/1b1OFdeUZa7lLlbaPvhHizA15JJ64qEFo/view 
 
 

@@ -40,7 +40,7 @@ const promptQuestions = () => {
                 "Apache2.0",
                 "MIT",
                 "GPLv3",
-                "GPLv2",
+                "Boost Software License 1.0",
             ]
             // validate: (value) => { if (value) { return true } else { return "Please choose value" } }
         },

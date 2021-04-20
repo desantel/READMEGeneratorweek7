@@ -2,7 +2,7 @@
 
 ----
 
-![MIT](https://img.shields.io/badge/License-MIT-blueviolet)
+![None](https://img.shields.io/badge/License-None-blueviolet)
 
 ## Table of Contents
 
@@ -19,22 +19,22 @@
 *[Contact Me](#Contact-Information)
   
 ## Description
-Application is used to help generate a professional README file
+Application streamlines README process by helping organize and create a professional README
   
 ## Installation
-Must have Node.js for use!  After node.js is installed, pull up repo and fork the week7node repo.  Pull up VSC and open files within.  Pull up integrated terminal.  Run npm i and allow to initiallize.  Once done, make sure terminal is within the Develop folder and type node index.js.
+Must have Node.js! Once this is installed, pull up desantel github and fork week7node repo.  Once forked, open files in visual studio code.  Open integrated terminal and type in npm i.
   
 ## Usage
-Once the you type in node index.js, answer prompted questions.
+Once npm i is done initallizing, make sure terminal is in Develop folder and type in node index.js.  Answer the questions as prompted.
 
 ## License
-MIT
+None
 
 ## Contribution
 None
   
 ## How to Test
-Type in node index.js and answer questions with test and when file is created, show preview
+Run node index.js and type in test into fields and select any license type.  Once file is generated, pull it up and look at preview.
   
 ## Contact-Information
 [Github Profile](https://github.com/desantel)

@@ -25,6 +25,8 @@ Must have Node.js! Once this is installed, pull up desantel github and fork week
   
 ## Usage
 Once npm i is done initallizing, make sure terminal is in Develop folder and type in node index.js.  Answer the questions as prompted.
+![Video](./Assets/testingVideo.webm)
+
 
 ## License
 None

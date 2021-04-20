@@ -31,25 +31,19 @@ const promptQuestions = () => {
             name: "usage",
             validate: (value) => { if (value) { return true } else { return "Please enter value" } }
         },
-        // {
-        //     type: "checkbox",
-        //     message: "What is the license type?",
-        //     name: "license",
-        //     choices: [
-        //         "None",
-        //         "Apache2.0",
-        //         "Berkley Software Distribution",
-        //         "MIT",
-        //         "Boost Software 1.0",
-        //         "Creative Commons Zero v1.0 Universal",
-        //         "Eclipse Public 2.0",
-        //         "GNU General Public License, version 3 (GPLv3)",
-        //         "GNU General Public v2.0 (GPLv2)",
-        //         "Mozilla Public 2.0",
-        //         "the Unilicense"
-        //     ],
-        //     validate: (value) => { if (value) { return true } else { return "Please choose value" } }
-        // },
+        {
+            type: "list",
+            message: "What is the license type?",
+            name: "license",
+            choices: [
+                "None",
+                "Apache2.0",
+                "MIT",
+                "GPLv3",
+                "GPLv2",
+            ]
+            // validate: (value) => { if (value) { return true } else { return "Please choose value" } }
+        },
         {
             type: "input",
             message: "Who all helped contribute?",
@@ -90,12 +84,8 @@ function writeToFile(data) {
 const init = () => {
     promptQuestions()
         .then((data) => writeFileAsync('README.md', generateMarkdown(data)))
-        .then((data) => writeToFile("README.md", generateMarkdown(data)))
-        .then(() => console.log('Creating README'))
         .catch((err) => console.error(err));
-    //     console.log("Creating Markdown");
-    //     writeToFile("README.md", generateMarkdown({...data}));
-    // });
+
 };
 
 // Function call to initialize app
